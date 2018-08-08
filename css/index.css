@@ -1,0 +1,356 @@
+@import url(base.css);
+/*头部开始*/
+header{
+    width: 100%;
+    height: 40px;
+    background: #444;
+}
+main{
+    /*width: 976px;*/
+    height: 40px;
+    /*background: #83c44e;*/
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.advertise{
+    font-size: 10px;
+    color: #A8A8AA;
+}
+/*头部结束*/
+/*头下部开始*/
+nav{
+    width: 100%;
+    height: 44px;
+    background:#323232;
+}
+ nav ul{
+    /*width: 976px;*/
+    height: 100%;
+    margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+ nav ul a{
+     color: #fff;
+     font-size: 12px;
+ }
+ nav ul li a:hover{
+     color: rgba(255,255,255,0.6);
+ }
+ nav ul li a .iconfont{
+      font-size: 25px;
+ }
+/*头下部结束*/
+/*展示开始*/
+.list , .list ul{
+    width: 100%;
+    height: auto;
+}
+.list ul li{
+    width: 100%;
+    /*height: 580px;*/
+    background: #fafafa;
+    margin-bottom: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.list ul li a{
+    display: block;
+    width: 100%;
+    /*height: 580px;*/
+    overflow: hidden;
+}
+.list ul li a h1{
+    width: 100%;
+    /*height: 61px;*/
+    /*margin-top: 43px;*/
+    /*line-height: 61px;*/
+    text-align: center;
+    /*font-size: 40px;*/
+    color: #333333;
+    font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.list ul li a h2{
+    width: 100%;
+    text-align: center;
+    color: #333333;
+    font-weight: normal;
+}
+.list ul li .x .understand{
+    display: inline-block;
+    padding-right: 34px;
+    font-size: 17px;
+    color: #5A9ED8;
+}
+.list ul li .x .purchase{
+    display: inline-block;
+    font-size: 17px;
+    color: #5A9ED8;
+}
+.list ul li .x{
+    text-align: center;
+}
+.list ul li .iphonex{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list ul li:nth-child(2) .ipad{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list ul li:nth-child(2){
+    background: #f4f4f4;
+}
+/*展示结束*/
+/*六宫格开始*/
+.sixlist , .sixlist ul{
+       width: 100%;
+        height: auto;
+}
+.sixlist ul li{
+    float:left;
+    /*border-left: 12px solid #fff;*/
+    /*border-right: 6px solid #fff;*/
+    border-bottom: 12px solid #fff;
+    box-sizing:border-box;
+    overflow: hidden;
+}
+.sixlist ul li:nth-child(2n){
+    /*border-left: 6px solid #fff;*/
+    /*border-right: 12px solid #fff;*/
+}
+.sixlist ul li a{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.sixlist ul li a h1{
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.sixlist ul li a h4{
+    width: 100%;
+    text-align: center;
+    color: #323232;
+    font-weight: normal;
+}
+/*六宫格结束*/
+@media screen and (min-width:1024px) {
+    main{
+       width: 976px;
+    }
+    nav ul{
+        width: 976px;
+    }
+    .max{
+        display: block;
+    }
+    .min{
+        display: none;
+    }
+    .list ul li{
+        height: 580px;
+    }
+    .list ul li a{
+        height: 580px;
+    }
+    .list ul li a h1{
+        height: 61px;
+        margin-top: 43px;
+        line-height: 61px;
+        font-size: 45px;
+    }
+    .list ul li a h2{
+        height: 44px;
+        line-height: 44px;
+        font-size: 20px;
+    }
+    .list ul li .iphonex{
+        width: 1068px;
+        height: 337px;
+        background: url("../img/iphone_x_large.jpg") no-repeat center;
+        background-size: 1068px 337px;
+        bottom: -42px;
+    }
+    .list ul li:nth-child(2) .ipad{
+        width: 930px;
+        height: 355px;
+        background: url("../img/ipad_large.jpg") no-repeat center;
+        background-size: 930px 355px;
+        bottom: -25px;
+    }
+    .sixlist ul li{
+        height: 592px;
+        width: 50%;
+        border-left: 12px solid #fff;
+        border-right: 6px solid #fff;
+    }
+    .sixlist ul li:nth-child(2n){
+        border-right: 12px solid #fff;
+        border-left: 6px solid #fff;
+    }
+    .sixlist ul li a{
+        height: 580px;
+        background: url("../img/shop_for_college_large.jpg") no-repeat center;
+        background-size: 1262px 580px;
+    }
+    .sixlist ul li a h1{
+        height: 40px;
+        margin-top: 40px;
+        line-height: 40px;
+        font-size: 31px;
+    }
+    .sixlist ul li a h4{
+        height: 31px;
+        line-height: 31px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .advertise{
+        padding-right: 30px;
+    }
+    .max{
+        display:block;
+        padding-right: 30px;
+    }
+    .min{
+        display: none;
+        padding-right: 30px;
+    }
+    .list ul li{
+        height: 569px;
+    }
+    .list ul li a{
+        height: 569px;
+    }
+    .list ul li a h1{
+        height: 48px;
+        margin-top: 101px;
+        line-height: 48px;
+        font-size: 40px;
+    }
+    .list ul li a h2{
+        height: 37px;
+        line-height: 37px;
+        font-size: 20px;
+    }
+    .list ul li .iphonex{
+        width: 736px;
+        height: 336px;
+        background: url("../img/iphone_x_medium.jpg") no-repeat center;
+        background-size: 736px 336px;
+        bottom: -40px;
+    }
+    .list ul li:nth-child(2) .ipad{
+        width: 650px;
+        height: 325px;
+        background: url("../img/ipad_medium.jpg") no-repeat center;
+        background-size: 650px 325px;
+        bottom: -25px;
+    }
+    .sixlist ul li{
+        height: 502px;
+        width: 50%;
+        border-left: 12px solid #fff;
+        border-right: 6px solid #fff;
+    }
+    .sixlist ul li:nth-child(2n){
+        border-right: 12px solid #fff;
+        border-left: 6px solid #fff;
+    }
+    .sixlist ul li a{
+        height: 490px;
+        background: url("../img/shop_for_college_medium.jpg") no-repeat center;
+        background-size: 516px 490px;
+    }
+    .sixlist ul li a h1{
+        height: 40px;
+        margin-top: 40px;
+        line-height: 40px;
+        font-size: 26px;
+    }
+    .sixlist ul li a h4{
+        height: 31px;
+        line-height: 31px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:768px) {
+    .max{
+        display:none;
+        padding-right: 30px;
+    }
+    .min{
+        display: block;
+        padding-right: 30px;
+    }
+    .list ul li{
+        height: 500px;
+    }
+    .list ul li a{
+        height: 500px;
+    }
+    .list ul li a h1{
+        height: 37px;
+        margin-top: 27px;
+        line-height: 37px;
+        font-size: 30px;
+    }
+    .list ul li a h2{
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+    .list ul li .iphonex{
+        width: 320px;
+        height: 353px;
+        background: url("../img/iphone_x_small.jpg") no-repeat center;
+        background-size: 350px 353px;
+        bottom: 0px;
+    }
+    .list ul li:nth-child(2) .ipad{
+        width: 228px;
+        height: 340px;
+        background: url("../img/ipad_small.jpg") no-repeat center;
+        background-size: 228px 340px;
+        bottom: 0px;
+    }
+    .sixlist ul li{
+        height: 512px;
+        width: 100%;
+        border-left: 0;
+        border-right: 0;
+    }
+    .sixlist ul li:nth-child(2n){
+        border-right: 0;
+        border-left: 0;
+    }
+    .sixlist ul li a{
+        height: 500px;
+        background: url("../img/shop_for_college_small.jpg") no-repeat center;
+        background-size: 736px 548px;
+    }
+    .sixlist ul li a h1{
+        height: 39px;
+        margin-top: 35px;
+        line-height: 39px;
+        font-size: 27px;
+    }
+    .sixlist ul li a h4{
+        height: 28px;
+        line-height: 28px;
+        font-size: 16px;
+    }
+}
