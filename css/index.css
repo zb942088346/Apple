@@ -1,4 +1,9 @@
 @import url(base.css);
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;}
 /*头部开始*/
 header{
     width: 100%;
@@ -115,6 +120,7 @@ nav{
 .sixlist , .sixlist ul{
        width: 100%;
         height: auto;
+    overflow: hidden;
 }
 .sixlist ul li{
     float:left;
@@ -146,6 +152,178 @@ nav{
     font-weight: normal;
 }
 /*六宫格结束*/
+/*底部开始*/
+.dress{
+    width: 100%;
+    height: auto;
+    background: #f1f1f1;
+}
+.dress .lab{
+    margin: 0 auto;
+    padding: 0 22px;
+    /*background: red;*/
+}
+.lab nav{
+    background: 0;
+}
+.lab nav .directory{
+    float: left;
+}
+.lab nav .directory p{
+
+}
+.lab nav .directory a{
+    display: block;
+
+    color: #545454;
+}
+.lab .lab_on{
+    width: auto;
+    height: 58px;
+    padding-top: 23px;
+    /*background: blue;*/
+    border-bottom: 1px solid #d5d5d5;
+    font-size: 10px;
+    line-height: 35px;
+    color: #878787;
+}
+.lab .lab_on a{
+    color: #0970cd;
+}
+.lab .lab_bottom{
+    width: auto;
+    height: 51px;
+    /*background: blue;*/
+    padding-top: 5px;
+}
+.lab .lab_bottom .list_on{
+     /*background: red;*/
+}
+.lab .lab_bottom .list_on h5{
+    height: 26px;
+    width: 264px;
+    font-size: 10px;
+    color: #878787;
+    line-height: 26px;
+    float: left;
+}
+.lab .lab_bottom .list_on ul li{
+    width: 53px;
+    height: 26px;
+    /*background: #3de43e;*/
+    border-right: 1px solid #d5d5d5;
+    float: left;
+    text-align: center;
+}
+.lab .lab_bottom .list_on ul li a{
+    font-size: 10px;
+    line-height: 26px;
+    color: #545454;
+}
+.lab .lab_bottom .list_on .list_right{
+    float: right;
+    font-size: 10px;
+}
+.lab .lab_bottom .list_on .list_right a{
+    color: #545454;
+}
+.lab .lab_bottom .list_bottom{
+           width: 300px;
+            height: 26px;
+    /*background: #3de43e;*/
+    font-size: 10px;
+    color: #989898;
+}
+.lab .lab_bottom .list_bottom a{
+    font-size: 10px;
+    color: #989898;
+}
+.appdress{
+    width: 100%;
+    height: auto;
+    background: #f1f1f1;
+}
+.appdress .applab{
+    width: auto;
+    height: 422px;
+    /*background: #83c44e;*/
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.applab nav{
+    width:auto ;
+    height: 280px;
+    background: 0;
+    padding-top:20px;
+}
+.applab nav .appdirectory{
+    /*width: 704px;*/
+    height: 37px;
+    border-bottom: 1px solid #d5d5d5;
+}
+.applab nav .appdirectory p{
+    /*width: 689px;*/
+    font-size: 10px;
+    line-height: 37px;
+    color: #323232;
+    float: left;
+}
+.applab nav .appdirectory i{
+    line-height: 37px;
+    color: #323232;
+    float: right;
+}
+.applab .app_go{
+    width: auto;
+    height: 40px;
+    padding-top: 10px;
+    font-size: 10px;
+    line-height: 30px;
+    color: #999;
+}
+.applab .app_go a{
+    color:#0970cd ;
+}
+.applab a{
+    font-size: 15px;
+    color: #323232;
+}
+.applab h5{
+    width: auto;
+    height: 31px;
+    font-size: 10px;
+    color: #999;
+    padding-top: 10px;
+    line-height: 21px;
+    font-weight: normal;
+}
+.applab ul {
+    width: auto;
+    height: 16px;
+}
+.applab ul li{
+    width: auto;
+    height: 16px;
+    float: left;
+    font-size: 10px;
+    border-right: 1px solid #555;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #555;
+}
+.applab ul li:nth-child(1){
+    padding-left: 0;
+}
+.applab ul li:nth-child(5){
+    border-right: 0;
+}
+.applab h4{
+    font-weight: normal;
+    font-size: 10px;
+    padding-top: 5px;
+    color: #999;
+}
+/*底部结束*/
 @media screen and (min-width:1024px) {
     main{
        width: 976px;
@@ -216,6 +394,30 @@ nav{
         line-height: 31px;
         font-size: 16px;
     }
+    .dress .lab{
+        width: 1020px;
+        height: 446px;
+    }
+    .lab nav{
+        width: 980px;
+        height: 337px;
+        padding-top: 40px;
+    }
+    .lab nav .directory{
+        width: 196px;
+        height: 298px;
+    }
+    .lab nav .directory p{
+        height: 26px;
+        font-size: 10px;
+    }
+    .lab nav .directory a{
+        height: 25px;
+        font-size: 9px;
+    }
+    .appdress{
+        display: none;
+    }
 }
 @media screen and (max-width:1024px) {
     .advertise{
@@ -224,6 +426,7 @@ nav{
     .max{
         display:block;
         padding-right: 30px;
+        padding-left: 30px;
     }
     .min{
         display: none;
@@ -286,6 +489,31 @@ nav{
         line-height: 31px;
         font-size: 16px;
     }
+    .dress .lab{
+        width: auto;
+        height: 446px;
+    }
+    .lab nav{
+        width: auto;
+        height: 337px;
+        padding-top: 20px;
+    }
+    .lab nav .directory{
+        width: auto;
+        height: 298px;
+        padding-right: 50px;
+    }
+    .lab nav .directory p{
+        height: 26px;
+        font-size: 10px;
+    }
+    .lab nav .directory a{
+        height: 25px;
+        font-size: 9px;
+    }
+    .appdress{
+        display: none;
+    }
 }
 @media screen and (max-width:768px) {
     .max{
@@ -295,6 +523,7 @@ nav{
     .min{
         display: block;
         padding-right: 30px;
+        padding-left: 30px;
     }
     .list ul li{
         height: 500px;
@@ -352,5 +581,14 @@ nav{
         height: 28px;
         line-height: 28px;
         font-size: 16px;
+    }
+    .dress{
+        display: none;
+    }
+    .appdress{
+        display: block;
+    }
+    .lab_on .lab_bottom{
+        display: none;
     }
 }
