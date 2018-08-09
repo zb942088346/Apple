@@ -283,6 +283,7 @@ nav{
 }
 .applab .app_go a{
     color:#0970cd ;
+    font-size: 10px;
 }
 .applab a{
     font-size: 15px;
@@ -300,6 +301,7 @@ nav{
 .applab ul {
     width: auto;
     height: 16px;
+    padding-top: 5px;
 }
 .applab ul li{
     width: auto;
@@ -320,7 +322,7 @@ nav{
 .applab h4{
     font-weight: normal;
     font-size: 10px;
-    padding-top: 5px;
+    padding-top: 10px;
     color: #999;
 }
 /*底部结束*/
