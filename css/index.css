@@ -499,6 +499,8 @@ nav{
         width: auto;
         height: 337px;
         padding-top: 20px;
+        display: flex;
+        justify-content: center;
     }
     .lab nav .directory{
         width: auto;
