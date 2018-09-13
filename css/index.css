@@ -420,6 +420,12 @@ nav{
     .appdress{
         display: none;
     }
+    .shoppingbag{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
 }
 @media screen and (max-width:1024px) {
     .advertise{
@@ -518,8 +524,20 @@ nav{
     .appdress{
         display: none;
     }
+    .shoppingbag{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
 }
 @media screen and (max-width:768px) {
+    .search{
+        display: block;
+    }
+    body{
+        position: relative;
+    }
     .max{
         display:none;
         padding-right: 30px;
@@ -528,6 +546,116 @@ nav{
         display: block;
         padding-right: 30px;
         padding-left: 30px;
+    }
+    .search{
+        width: 100%;
+        height: 0;
+        background: #000;
+        position: fixed;
+        overflow: hidden;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        transition: all 1s;
+    }
+    .search .search_top {
+        width: 100%;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .search .search_top .left{
+        width: 43px;
+        height: 43px;
+        font-size: 34px;
+        line-height: 43px;
+        text-align: center;
+        transform: rotate(45deg);
+    }
+    .search .search_top i{
+        font-size: 27px;
+    }
+    .search .search_top .left:hover,.search .search_top i:hover{
+        color: #ccc;
+    }
+    .search .search_center{
+        width: 100%;
+        height: 53px;
+        box-sizing: border-box;
+        padding: 0 30px;
+        position: relative;
+        color: #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    .search .search_center input{
+        width: 100%;
+        height: 36px;
+        outline: none;
+        border: none;
+        background: #282828;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+        padding-left: 30px;
+    }
+    .search .search_center i{
+        display: block;
+        position: absolute;
+        top:4px;
+        left: 36px;
+        font-size: 20px;
+    }
+    .search .search_bottom {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 40px 45px 8px;
+        display: block;
+    }
+    .search .search_bottom li{
+        width: 100%;
+        height: 44px;
+        border-bottom: 1px solid #ccc;
+        font-size: 18px;
+        color: #fff;
+        line-height: 44px;
+        font-weight: 400;
+    }
+
+    .shoppingbag{
+        width: 290px;
+        height: 318px;
+        background: #fefefe;
+        position: absolute;
+        right: 6px;
+        top: 97px;
+        z-index: 100;
+        box-sizing: border-box;
+        border: 1px solid #d5d5d5;
+        padding: 0 20px;
+        display: none;
+    }
+    .shoppingbag_top{
+        width: 100%;
+        height: 87px;
+        font-size: 13px;
+        line-height: 87px;
+        text-align: center;
+        color: #9d9d9d;
+    }
+    .shoppingbag ul{
+        width: 100%;
+        height: 228px;
+    }
+    .shoppingbag ul li{
+        width: 100%;
+        height: 44px;
+        border-top:1px solid #e2e2e2;
+    }
+    .bag_left{
+        color: #5ca0da;
+        line-height: 44px;
     }
     .list ul li{
         height: 500px;
